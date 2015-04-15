@@ -1,4 +1,4 @@
-Cameron-Craig-Application
+Product Engineer Application
 =========================
 
-This is a cover-page site I made for a job application to a Product Engineer position through the recruiting firm *Cameron Craig*.
+This is a cover-page site I made while applying to Product Design/Development Engineering jobs.
