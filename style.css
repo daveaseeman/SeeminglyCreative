@@ -21,3 +21,12 @@ p img {
   -moz-border-radius: 100px;
   border-radius: 100px;
 }
+
+.quote {
+  font-style: italic;
+}
+
+.container {
+  max-width: 960px;
+  padding: 10px 50px 10px 50px;
+}
