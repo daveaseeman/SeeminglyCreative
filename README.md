@@ -1,4 +1,4 @@
-Dave Seeman, Freelance Consultant
+Dave Seeman, Freelance Design & Engineering
 ==========================
 
-Landing page for my consulting business.
+Landing page for my freelancing business.
