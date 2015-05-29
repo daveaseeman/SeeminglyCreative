@@ -3,15 +3,17 @@ div {
   text-align: center;
   margin: 50px auto;
 }
-ul {
+ol, ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-li {
-  margin: 30px;
+ul > li {
   margin-left: 0px;
   display: inline-block;
+}
+ol > li {
+  margin-left: 0px;
 }
 p img {
   margin-top 20px;
