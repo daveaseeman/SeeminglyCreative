@@ -1,4 +1,4 @@
-Dave Seeman, Engineer (EIT)
+Dave Seeman Consulting
 ==========================
 
-I really like to make things. Like this resume landing page.
+Landing page for my consulting business.
