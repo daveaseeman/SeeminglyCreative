@@ -9,6 +9,7 @@ ol, ul {
   list-style-type: none;
 }
 ul > li {
+  margin: 30px;
   margin-left: 0px;
   display: inline-block;
 }
