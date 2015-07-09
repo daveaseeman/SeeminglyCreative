@@ -1,4 +1,4 @@
-ol, ul {
+ul {
   margin: 0 atuo;
   padding: 0;
   list-style-type: none;
@@ -9,24 +9,12 @@ ul > li {
   display: inline-block;
 }
 
-ol > li {
-  margin-left: 0px;
-}
-
 img {
   width: 300px;
   height: 300px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
   border-radius: 150px;
-}
-
-p img {
-  margin-top 20px;
-  width: 200px;
-  height: 200px;
-  margin: 10px auto;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
 }
 
 .container {
@@ -38,8 +26,4 @@ p img {
   padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
-}
-
-.quote {
-  font-style: italic;
 }
