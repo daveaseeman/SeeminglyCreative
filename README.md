@@ -1,4 +1,4 @@
-Dave Seeman, Freelance Design & Engineering
-==========================
+Freelance
+===
 
-Landing page for my freelancing business.
+Landing page for my freelancing business :briefcase:.
