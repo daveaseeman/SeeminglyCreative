@@ -1,0 +1,17 @@
+<div>
+  {% capture cutoff_date %}{{ site.time | date: "%s" }}{% endcapture %}
+  {% assign workshops = site.data.workshops | sort: 'date' %}
+  <ul>
+    {% for workshop in workshops reversed %}
+    {% capture workshop_date %}{{ workshop.date | date: "%s" }}{% endcapture %}
+    {% if workshop_date > cutoff_date %}
+    <li>
+      <h2>{{ workshop.title }}</h2>
+      <p>On <i class="fa fa-calendar"></i> {{ workshop.date | date: "%b %-d, %Y" }} from <i class="fa fa-clock-o"></i> {{ workshop.time }}</p>
+      <p>At <i class="fa fa-map-marker"></i> {{ workshop.location }}
+      <p>{{ workshop.description }}</p>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
