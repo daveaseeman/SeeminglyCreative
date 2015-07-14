@@ -27,3 +27,22 @@ img {
   padding-left: 50px;
   padding-right: 50px;
 }
+
+.collapse{
+   display:inline-block;
+ }
+ .collapse + input{
+   display:none;
+ }
+ .collapse + input + *{
+   display:none;
+ }
+ .collapse+ input:checked + *{
+   display:inline-block;
+ }
+ 
+ .workshop {
+   text-align: left;
+   margin: 0 auto;
+   max-width: 80%;
+ }
