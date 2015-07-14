@@ -1,3 +1,4 @@
+<div class="full-height">
 {% capture cutoff_date %}{{ site.time | date: "%s" }}{% endcapture %}
 {% assign workshops = site.data.workshops | sort: 'date' %}
 <h1>Upcoming Workshops:</h1>
@@ -14,4 +15,5 @@
   </div>
   {% endif %}
   {% endfor %}
+</div>
 </div>
