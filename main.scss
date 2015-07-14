@@ -75,3 +75,26 @@ footer {
    padding-left: 30px;
    padding-right: 30px;
 }
+
+.button {
+  border: 0 none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  line-height: 20px;
+  margin-top: 40%;
+  margin-bottom: 40%;
+  padding: 7px 10px;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  width: 200px;
+  text-align: center; /* DELETE WHEN WIDTH AUTO */
+  background: none repeat scroll 0 0 #2DB6CF;
+  &:hover {
+    background: none repeat scroll 0 0 #999999;
+    color: white;
+  }
+}
