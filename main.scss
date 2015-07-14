@@ -7,19 +7,26 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 
 * {
-  margin: 0;
   padding: 0;
-  line-height: 1.4;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
 }
 
 ul {
-  margin: 0 auto;
-  padding: 0;
   list-style-type: none;
 }
 
 ul > li {
-  margin: 30px;
+  margin-bottom: 15px;
   display: inline-block;
 }
 
@@ -34,9 +41,8 @@ img {
 .container {
   font-family: 'lato', serif;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   max-width: 960px;
-  margin: 0 auto;
   padding-top: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -44,8 +50,8 @@ img {
 
 hr {
   display: block;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .fa {
@@ -67,5 +73,4 @@ hr {
  
  .workshop {
    text-align: left;
-   margin: 0 auto;
 }
