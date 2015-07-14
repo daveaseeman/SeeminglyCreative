@@ -12,13 +12,12 @@
   line-height: 1.5;
 }
 
-html {
-  position: relative;
-  min-height: 100%;  
+html, body {
+  height: 100%;  
 }
 
-body, .full-height {
-  height: 100%;
+.full-height {
+  min-height: 100%;
 }
 
 ul {
