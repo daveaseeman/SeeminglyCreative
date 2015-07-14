@@ -1,7 +1,7 @@
 {% capture cutoff_date %}{{ site.time | date: "%s" }}{% endcapture %}
 {% assign workshops = site.data.workshops | sort: 'date' %}
 <h1>Upcoming Workshops:</h1>
-{% for workshop in workshops reversed %}
+{% for workshop in workshops %}
 {% capture workshop_date %}{{ workshop.date | date: "%s" }}{% endcapture %}
 {% if workshop_date > cutoff_date %}
 <div>
