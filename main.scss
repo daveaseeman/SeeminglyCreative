@@ -77,24 +77,24 @@ footer {
 }
 
 .button {
-  border: 0 none;
-  border-radius: 2px;
+  text-align: center;
   color: white;
-  cursor: pointer;
+  background-color: white;
+  border: 2px solid #3498db;
+  border-radius: 10px;
   display: block;
   line-height: 20px;
-  margin-top: 40%;
-  margin-bottom: 40%;
+  margin-top: 150px;
   padding: 7px 10px;
-  text-transform: none;
+  width: 200px;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
-  width: 200px;
-  text-align: center; /* DELETE WHEN WIDTH AUTO */
-  background: none repeat scroll 0 0 #2DB6CF;
-  &:hover {
-    background: none repeat scroll 0 0 #999999;
-    color: white;
+
+  &:hover, &:hover, &:focus {
+    color: 3498db;
+    background-color: 3498db;
+    border: 2px solid white;
   }
+
 }
