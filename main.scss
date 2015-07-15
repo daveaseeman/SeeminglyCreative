@@ -17,7 +17,7 @@ html, body, .container {
 }
 
 .full-height {
-  min-height: 95%;
+  min-height: 100%;
 }
 
 ul {
@@ -90,6 +90,7 @@ footer {
   margin-top: 100px;
 
   transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 
