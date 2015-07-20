@@ -12,9 +12,9 @@
 <body>
   <div class="container">
   <!-- Intro -->
-  <a href="#thisfile">thisfile</a>
+  <a href="#include-markdown">You can include markdown</a>
   {% include intro.html %}
-  {% include markdown.html param="thisfile" %}
+  {% include markdown.html file="markdown-file" selector="section" id="markdown-include" classes="markdown classes"%}
   <hr>
   <!-- Capabilities -->
   {%include capabilities.html %}
