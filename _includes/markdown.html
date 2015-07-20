@@ -1,1 +1,1 @@
-<a name="#{{include.param}}"></a>{% capture markdown %}{% include {{include.param}}.md %}{% endcapture %}{{ markdown | markdownify }}
+<a href="#{{include.param}}"></a>{% capture markdown %}{% include {{include.param}}.md %}{% endcapture %}{{ markdown | markdownify }}
