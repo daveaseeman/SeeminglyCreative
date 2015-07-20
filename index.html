@@ -11,25 +11,23 @@
   
 <body>
   <div class="container">
-  <!-- Intro -->
-  <a href="#include-markdown">You can include markdown</a>
-  {% include intro.html %}
-  {% include markdown.html file="markdown-file" selector="section" id="markdown-include" classes="markdown classes"%}
-  <hr>
-  <!-- Capabilities -->
-  {%include capabilities.html %}
-  <hr>
-  <!-- Calendar -->
-  {% include calendar.html %}
-  <hr>
-  <!-- Contact -->
-  {% include contact.html %}
+    <!-- Intro -->
+    {% include intro.html %}
+    <hr>
+    <!-- Capabilities -->
+    {%include capabilities.html %}
+    <hr>
+    <!-- Calendar -->
+    {% include calendar.html %}
+    <hr>
+    <!-- Contact -->
+    {% include contact.html %}
   </div>
-</body>
   
-<footer>
-  <!-- Footer -->
-  {% include footer.html %}
-</footer>
+  <footer>
+    <!-- Footer -->
+    {% include footer.html %}
+  </footer>
+</body>
   
 </html>
