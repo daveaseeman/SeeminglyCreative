@@ -1,4 +1,13 @@
-<!-- BEGIN PRIVY WIDGET CODE -->
+---
+# Frontmatter
+---
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <!-- Head -->
+  {% include head.html %}
+  <!-- BEGIN PRIVY WIDGET CODE -->
 <script type='text/javascript'>
 var _d_site = _d_site || '7C74803D7D67C8152A64A27A';
 (function(w, d, p, s, s2) { 
@@ -8,3 +17,27 @@ var _d_site = _d_site || '7C74803D7D67C8152A64A27A';
 })(window, document, 'Privy');
 </script>
 <!-- END PRIVY WIDGET CODE -->
+</head>
+  
+<body>
+  <div class="container">
+    <!-- Intro -->
+    {% include intro.html %}
+    <hr>
+    <!-- Capabilities -->
+    {%include capabilities.html %}
+    <hr>
+    <!-- Calendar -->
+    {% include calendar.html %}
+    <hr>
+    <!-- Contact -->
+    {% include contact.html %}
+  </div>
+  
+  <footer>
+    <!-- Footer -->
+    {% include footer.html %}
+  </footer>
+</body>
+  
+</html>
