@@ -1,1 +1,68 @@
 
+<!-- 
+
+    S U P P O R T
+    - - - - - - -
+    
+    Web: ctrlq.org
+
+    Twitter: @labnol
+    
+    Email: amit@labnol.org
+      
+-->
+
+<form id="myForm">
+    <input type="text" name="myName" placeholder="Your name..">
+    <input type="file" name="myFile">
+    <input type="submit" value="Upload File" 
+           onclick="this.value='Uploading..';
+                    google.script.run.withSuccessHandler(fileUploaded)
+                    .uploadFiles(this.parentNode);
+                    return false;">
+</form>
+
+<div id="output"></div>
+
+<script>
+    function fileUploaded(status) {
+        document.getElementById('myForm').style.display = 'none';
+        document.getElementById('output').innerHTML = status;
+    }
+</script>
+
+<style>
+ input { display:block; margin: 20px; }
+</style>
+
+
+
+function doGet(e) {
+  return HtmlService.createHtmlOutputFromFile('form.html');
+}
+
+function uploadFiles(form) {
+  
+  try {
+    
+    var uploads = "Uploads";
+    var folder, folders = DriveApp.getFoldersByName(uploads);
+    
+    if (folders.hasNext()) {
+      folder = folders.next();
+    } else {
+      folder = DriveApp.createFolder(uploads);
+    }
+    var myName = "entry.1215085177"
+    var blob = form.myName;    
+    var url = folder.createFile(blob);    
+    url.setDescription("Uploaded by " + form.myName);
+        
+    return "File uploaded successfully " + file.getUrl();
+    
+  } catch (error) {
+    
+    return error.toString();
+  }
+  
+}
