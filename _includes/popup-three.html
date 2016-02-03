@@ -1,9 +1,10 @@
 <script>
 setTimeout(function(){
   swal({
-    title: "How can we help?",
-    text: "Do you need to sell your house?",
+    title: "HTMLHow can we help?",
+    text: "Do you need to sell your house?<form><input type="radio" name="browser" onclick="check(this.value)" value="Internet Explorer">Internet Explorer<br><input type="radio" name="browser" onclick="check(this.value)" value="Firefox">Firefox<br><input type="radio" name="browser" onclick="check(this.value)" value="Opera">Opera<br><br></form>",
     type: "info",
+    html: true,
     showCancelButton: true,
     confirmButtonText: "Yes",
     cancelButtonText: "No",
