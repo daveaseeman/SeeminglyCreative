@@ -4,6 +4,7 @@ setTimeout(function(){
     title: "How can we help?",
     text: "Do you need to sell your house?",
     type: "info",
+    animation: "slide-from-top",
     showCancelButton: true,
     confirmButtonText: "Yes",
     cancelButtonText: "No",
@@ -12,11 +13,9 @@ setTimeout(function(){
     function(isConfirm){
       if (isConfirm) {
         swal({
-          title: "We can help!",
-          text: "We have all the information you need, ready to see it?",
-          type: "success",
-          confirmButtonText: "Show me!",
-          cancelButtonText: "No thanks"
+          title: "We can help!,",
+          text: "Whether you need to sell fast or just want the most value for your house, we can help. Click below to signup for our crash course on selling your house.",
+          type: "success"
         },
         function(){
           window.location.href = '/sell-your-house/';
@@ -24,11 +23,30 @@ setTimeout(function(){
       }
       else {
         swal({
-          title: "That's okay!",
-          text: "We'll be here when you need us!",
-          type: "error",
-          confirmButtonText: "Back to Browsing",
-        });
+          title: "Are you an investor?",
+          text: "We frequently source deals in residential and commercial property. Sign up to get notified as soon as something becomes available.",
+          type: "warning"
+          showCancelButton: true,
+          confirmButtonText: "Yes",
+          cancelButtonText: "No",
+          closeOnConfirm: false,
+          closeOnCancel: true },
+          function(isConfirm){
+            if (isConfirm) {
+              swal({
+                title: "We can help!,",
+                text: "Whether you need to sell fast or just want the most value for your house, we can help. Click below to signup for our crash course on selling your house.",
+                type: "success"
+              },
+              function(){
+                window.location.href = '/investors/';
+              });
+            }
+            else {
+              swal({"Got it", "Let us know if we can help you in the future", "error"});
+            }
+          }
+        );
       }
   });
 }, 5000);
