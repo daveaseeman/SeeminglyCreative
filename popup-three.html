@@ -1,35 +1,27 @@
-<script>
-setTimeout(function(){
-  swal({
-    title: "How can we help?",
-    text: "Do you need to sell your house?",
-    type: "info",
-    showCancelButton: true,
-    confirmButtonText: "Yes",
-    cancelButtonText: "No",
-    closeOnConfirm: false,
-    closeOnCancel: false },
-    function(isConfirm){
-      if (isConfirm) {
-        swal({
-          title: "We can help!",
-          text: "We have all the information you need, ready to see it?",
-          type: "success",
-          confirmButtonText: "Show me!",
-          cancelButtonText: "No thanks"
-        },
-        function(){
-          window.location.href = '/sell-your-house/';
-        });
-      }
-      else {
-        swal({
-          title: "That's okay!",
-          text: "We'll be here when you need us!",
-          type: "error",
-          confirmButtonText: "Back to Browsing",
-        });
-      }
-  });
-}, 5000);
-</script>
+---
+# Frontmatter
+---
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <!-- Head -->
+  {% include head.html %}
+  <script src="assets/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/sweetalert.css">
+  {% include popup-three.html %}
+</head>
+  
+<body>
+  <div class="container">
+    <!-- Intro -->
+    {% include popup.html %}
+  </div>
+  
+  <footer>
+    <!-- Footer -->
+    {% include footer.html %}
+  </footer>
+</body>
+  
+</html>
