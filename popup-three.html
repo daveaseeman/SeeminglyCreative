@@ -1,0 +1,35 @@
+<script>
+setTimeout(function(){
+  swal({
+    title: "How can we help?",
+    text: "Do you need to sell your house?",
+    type: "info",
+    showCancelButton: true,
+    confirmButtonText: "Yes",
+    cancelButtonText: "No",
+    closeOnConfirm: false,
+    closeOnCancel: false },
+    function(isConfirm){
+      if (isConfirm) {
+        swal({
+          title: "We can help!",
+          text: "We have all the information you need, ready to see it?",
+          type: "success",
+          confirmButtonText: "Show me!",
+          cancelButtonText: "No thanks"
+        },
+        function(){
+          window.location.href = '/sell-your-house/';
+        });
+      }
+      else {
+        swal({
+          title: "That's okay!",
+          text: "We'll be here when you need us!",
+          type: "error",
+          confirmButtonText: "Back to Browsing",
+        });
+      }
+  });
+}, 5000);
+</script>
