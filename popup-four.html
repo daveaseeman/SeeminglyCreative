@@ -7,18 +7,10 @@
 <head>
   <!-- Head -->
   {% include head.html %}
-</head>
-  
-<body>
-  <div class="container">
-    <!-- Intro -->
-    <html>
-  <head>
     <script type="text/javascript" src="http://beeker.io/lab/exit-intent-popup/bioep.min.js"></script>
-    
     <script type="text/javascript">
       bioEp.init({
-        html: '<div id="bio_ep_content">' +
+        h1: '<div id="bio_ep_content">' +
         '<img src="http://beeker.io/images/posts/2/tag.png" alt="Claim your discount!" />' +
         '<span>HOLD ON!</span>' +
         '<span>Click the button below to get a special discount</span>' +
@@ -35,12 +27,14 @@
         cookieExp: 0
     });
     </script>
-  </head>
+</head>
   
-  <body>
+<body>
+  <div class="container">
+    <!-- Intro -->
+    <h1>popup test</h1>
     <p>Move your cusor above this window after 5 seconds.</p>
-  </body>
-</html>
+
   </div>
   
   <footer>
