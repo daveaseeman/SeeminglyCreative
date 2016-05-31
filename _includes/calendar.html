@@ -7,7 +7,7 @@
   {% capture workshop_date %}{{ workshop.date | date: "%s" }}{% endcapture %}
   {% if workshop_date > cutoff_date %}
   <!--<div>-->
-    <!--<label class="collapse" for="_{{workshop.date | date: "%s" }}"><h2>{{ workshop.name }}</h2></i></label><input id="_{{workshop.date | date: "%s" }}" type="checkbox">-->
+    <label class="collapse" for="_{{workshop.date | date: "%s" }}"><h2>{{ workshop.name }}</h2></i></label><input id="_{{workshop.date | date: "%s" }}" type="checkbox">
     <div class="workshop">
       <small><i class="fa fa-calendar"></i> {{ workshop.date | date: "%b %-d, %Y" }}</small><br>
       <small><i class="fa fa-clock-o"></i> {{ workshop.time }}</small><br>
