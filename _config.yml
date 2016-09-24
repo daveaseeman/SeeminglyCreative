@@ -1,0 +1,11 @@
+title: Seemingly Creative
+author: Dave Seeman
+email: daveseeman12@gmail.com
+description: Seemingly Creative
+url: "http://seeminglycreative.com"
+
+# Build Settings
+markdown: kramdown
+gems:
+  - jemoji
+  - jekyll-sitemap
