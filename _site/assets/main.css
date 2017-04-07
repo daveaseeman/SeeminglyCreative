@@ -1,0 +1,85 @@
+@import url(https://necolas.github.io/normalize.css/3.0.2/normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,300italic);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+* {
+  padding: 0;
+  margin: 0 auto;
+  line-height: 1.5; }
+
+html, body {
+  height: 100%; }
+
+.full-height {
+  height: 100vh; }
+
+ul {
+  list-style-type: none; }
+
+ul > li {
+  padding: 15px;
+  display: inline-block; }
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px; }
+
+.container {
+  font-family: 'Lato', serif;
+  text-align: center;
+  font-size: 20px;
+  max-width: 960px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+hr {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+footer {
+  text-align: center;
+  margin: 15px; }
+
+.collapse {
+  display: inline-block; }
+
+.collapse + input {
+  display: none; }
+
+.collapse + input + * {
+  display: none; }
+
+.collapse + input:checked + * {
+  display: inline-block; }
+
+.workshop {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.button {
+  text-align: center;
+  color: #3498db;
+  background-color: white;
+  border: 2px solid #3498db;
+  border-radius: 15px;
+  display: block;
+  width: 125px;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  margin-top: 100px;
+  transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s; }
+  .button:hover, .button:hover, .button:focus {
+    color: white;
+    background-color: #3498db;
+    border: 2px solid white;
+    text-decoration: none; }
