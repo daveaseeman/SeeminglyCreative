@@ -9,6 +9,8 @@
 <title>Seemingly Creative - Dave Seeman</title>
 <link rel="stylesheet" href="/assets/main.css">
 
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 </head>
 
 <body>
@@ -26,6 +28,85 @@
     </section>
   </section>
 </div>
+
+    <hr>
+
+    <!-- Work -->
+    <h3>Some examples of my work:</h3>
+<small><em>click to see the site</em></small>
+
+
+<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+<div id= "content-1">
+<div class="css-mb with-glare">
+  <a target="_blank" href="http://fractalhardware.com">
+    <div class="mb-display-position">
+      <div class="mb-display">
+        <div class="mb-screen-position">
+          <div class="mb-screen">
+            <iframe id="1" src="http://fractalhardware.com"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="mb-body"></div>
+  <div class="mb-bottom-cover"></div>
+</div>
+</div>
+
+<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+<div id= "content-2">
+<div class="css-mb with-glare">
+  <a target="_blank" href="http://volhomes.com">
+    <div class="mb-display-position">
+      <div class="mb-display">
+        <div class="mb-screen-position">
+          <div class="mb-screen">
+            <iframe id="2" src="http://volhomes.com"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="mb-body"></div>
+  <div class="mb-bottom-cover"></div>
+</div>
+</div>
+
+<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+<div id= "content-3">
+<div class="css-mb with-glare">
+  <a target="_blank" href="https://www.weethepeopletee.com">
+    <div class="mb-display-position">
+      <div class="mb-display">
+        <div class="mb-screen-position">
+          <div class="mb-screen">
+            <iframe id="3" src="https://www.weethepeopletee.com"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="mb-body"></div>
+  <div class="mb-bottom-cover"></div>
+</div>
+</div>
+
+
+<script>
+var divs = $('div[id^="content-"]').hide(),
+    i = 0;
+
+(function cycle() {
+
+    divs.eq(i).fadeIn(1000)
+              .delay(2000)
+              .fadeOut(1000, cycle);
+
+    i = ++i % divs.length;
+})();
+</script>
 
     <hr>
 

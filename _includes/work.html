@@ -1,0 +1,37 @@
+<h3>Some examples of my work:</h3>
+<small><em>click to see the site</em></small>
+{% assign websites = site.data.websites %}
+{% for website in websites %}
+<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+<div id= "content-{{ website.id }}">
+<div class="css-mb with-glare">
+  <a target="_blank" href="{{website.src}}">
+    <div class="mb-display-position">
+      <div class="mb-display">
+        <div class="mb-screen-position">
+          <div class="mb-screen">
+            <iframe id="{{ website.id }}" src="{{ website.src }}"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="mb-body"></div>
+  <div class="mb-bottom-cover"></div>
+</div>
+</div>
+{% endfor %}
+
+<script>
+var divs = $('div[id^="content-"]').hide(),
+    i = 0;
+
+(function cycle() {
+
+    divs.eq(i).fadeIn(1000)
+              .delay(2000)
+              .fadeOut(1000, cycle);
+
+    i = ++i % divs.length;
+})();
+</script>
