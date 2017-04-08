@@ -21,8 +21,8 @@ ul > li {
   display: inline-block; }
 
 .avatar {
-  width: 300px;
-  height: 300px;
+  width: 20em;
+  height: 20em;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   border-radius: 150px; }
@@ -45,18 +45,6 @@ footer {
   text-align: center;
   margin: 15px; }
 
-.collapse {
-  display: inline-block; }
-
-.collapse + input {
-  display: none; }
-
-.collapse + input + * {
-  display: none; }
-
-.collapse + input:checked + * {
-  display: inline-block; }
-
 .workshop {
   text-align: left;
   padding-left: 30px;
@@ -74,12 +62,31 @@ footer {
   line-height: 30px;
   white-space: nowrap;
   margin-top: 100px;
+  padding-bottom: 30px;
   transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s; }
   .button:hover, .button:hover, .button:focus {
-    color: white;
     background-color: #3498db;
-    border: 2px solid white;
+    border: 2px solid white; }
+    .button:hover a, .button:hover a, .button:focus a {
+      color: white; }
+  .button a:hover, .button a:hover, .button a:focus {
     text-decoration: none; }
+
+.center {
+  margin: 0 auto;
+  text-align: center; }
+
+.mc-field-group {
+  margin: 0 auto;
+  text-align: left;
+  width: 50%;
+  display: block; }
+  .mc-field-group textarea, .mc-field-group input {
+    outline: 0;
+    border: 0;
+    float: right;
+    width: 100%;
+    border-bottom: 1px solid #3498db; }
