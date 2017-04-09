@@ -1,28 +1,10 @@
 @import url(https://necolas.github.io/normalize.css/3.0.2/normalize.css);
-@import url(https://fonts.googleapis.com/css?family=Galada:400|Lato:300:400,300italic);
+@import url(https://fonts.googleapis.com/css?family=Galada:400|Lato:300);
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
-.seemingly {
-  font-family: "Galada", cursive;
-  font-weight: 400;
-  font-size: 5vw;
-  line-height: .5;
-  margin-top: 15vh; }
-
-.creative {
-  font-size: 4.5vw;
-  font-weight: 400;
-  line-height: .5; }
-
-.logo {
-  color: black;
-  text-decoration: none; }
-  .logo:hover, .logo:visited {
-    color: black;
-    text-decoration: none; }
-
 * {
   font-family: "Lato", sans-serif;
+  text-align: left;
   font-weight: 300;
   padding: 0;
   margin: 0 auto;
@@ -53,12 +35,14 @@ ul > li {
 
 .container {
   font-family: 'Lato', serif;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
-  max-width: 960px;
-  padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px; }
+  max-width: 960px; }
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+  display: block; }
 
 hr {
   display: block;
