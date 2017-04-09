@@ -3,7 +3,7 @@
 ---
 @charset "utf-8";
 @import url(https://necolas.github.io/normalize.css/3.0.2/normalize.css);
-@import url(https://fonts.googleapis.com/css?family=Galada|Lato:100:200:300,300italic);
+@import url(https://fonts.googleapis.com/css?family=Galada:400|Lato:300:400,300italic);
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 
@@ -11,13 +11,15 @@ $logo-height: 5vw;
 
 .seemingly {
   font-family: "Galada", cursive;
+  font-weight: 400;
   font-size: $logo-height;
   line-height: .5;
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
 .creative {
   font-size: $logo-height*9/10;
+  font-weight: 400;
   line-height: .5;
 }
 
