@@ -1,6 +1,9 @@
-- src: /assets/work/fractal.png
+- img: /assets/work/fractal.png
   id: 1
-- src: /assets/work/volhomes.png
+  url: http://fractalhardware.com
+- img: /assets/work/volhomes.png
   id: 2
-- src: /assets/work/weethepeopletee.png
+  url: http://volhomes.com
+- img: /assets/work/weethepeopletee.png
   id: 3
+  url: https://weethepeopletee.com

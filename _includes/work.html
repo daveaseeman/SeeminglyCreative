@@ -5,12 +5,12 @@
 <!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
 <div id= "content-{{ website.id }}">
 <div class="css-mb with-glare">
-  <a target="_blank" href="{{website.src}}">
+  <a target="_blank" href="{{ website.url }}">
     <div class="mb-display-position">
       <div class="mb-display">
         <div class="mb-screen-position">
           <div class="mb-screen">
-            <iframe id="{{ website.id }}" src="{{ website.src }}"></iframe>
+            <iframe id="{{ website.id }}" src="{{ website.img }}"></iframe>
           </div>
         </div>
       </div>
