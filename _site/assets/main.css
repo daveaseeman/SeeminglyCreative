@@ -101,14 +101,15 @@ footer {
 .mc-field-group {
   margin: 0 auto;
   text-align: left;
-  width: 50%;
+  width: 70%;
   display: block; }
   .mc-field-group textarea, .mc-field-group input {
     outline: 0;
     border: 0;
     float: right;
     width: 100%;
-    border-bottom: 1px solid #c1c1c1; }
+    border-bottom: 1px solid #c1c1c1;
+    border-radius: 0px; }
   .mc-field-group label {
     font-family: 'Lato', sans-serif;
     font-weight: 300; }
