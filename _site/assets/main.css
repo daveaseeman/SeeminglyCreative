@@ -76,7 +76,7 @@ footer {
   border: 2px solid #c1c1c1;
   border-radius: 15px;
   display: block;
-  width: 125px;
+  width: 150px;
   height: 30px;
   line-height: 30px;
   white-space: nowrap;
@@ -101,7 +101,6 @@ footer {
 .mc-field-group {
   margin: 0 auto;
   text-align: left;
-  width: 70%;
   display: block; }
   .mc-field-group textarea, .mc-field-group input {
     outline: 0;
@@ -113,6 +112,10 @@ footer {
   .mc-field-group label {
     font-family: 'Lato', sans-serif;
     font-weight: 300; }
+
+.inline-list li {
+  display: inline;
+  list-style-type: none; }
 
 .css-mb {
   max-width: 650px;
